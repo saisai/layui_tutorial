@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Start using layui</title>
+  <link rel="stylesheet" href="{% static 'css/layui.css' %}">
+</head>
+<body>
+ 
+<!-- Your HTML code-->
+ 
+<script src="{% static 'layui.js' %}"></script>
+<script>
+//Generally written directly in a js file
+layui.use(['layer','form'], function(){
+  var layer = layui.layer
+  ,form = layui.form;
+  
+  layer.msg('Hello World');
+});
+</script> 
+</body>
+</html>
