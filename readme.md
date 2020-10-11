@@ -41,3 +41,12 @@ file = open(filename, encoding="utf8")
 https://stackoverflow.com/questions/9233027/unicodedecodeerror-charmap-codec-cant-decode-byte-x-in-position-y-character
 
 https://stackoverflow.com/questions/28218174/current-directory-os-getcwd-from-within-django-determined-how
+
+https://stackoverflow.com/questions/30218802/get-parent-of-current-directory-from-python-script/30218825
+
+https://stackoverflow.com/questions/49016255/django-display-contents-of-txt-file-on-the-website
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Admin_site
+
+https://topic.alibabacloud.com/a/how-do-i-submit-an-image-file-in-the-layui-quick-start-form-form-_ajax_8_8_20293508.html
+
+https://github.com/sentsin/layui/

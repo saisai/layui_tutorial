@@ -13,9 +13,6 @@ def hello_world(request):
 def table(request):
     return render(request, 'table.html', {})  
 
-def jsons(request):
-    return HttpResponse('json/demo1.json')
-    #return render(request, 'json/demo1.json', {})   
 
 def json(request):
     from os.path import dirname
@@ -42,5 +39,22 @@ def json2(request):
     file_content = f.read()
     f.close()
     return HttpResponse(file_content, content_type="application/json")    
-    #return HttpResponse(file_content, content_type="text/plain")        
+    #return HttpResponse(file_content, content_type="text/plain")    
+
+def admintest(request):
+    return render(request, 'admin.html', {})
+    
+def all(request):
+    return render(request, 'all.html', {})    
+    
+def button(request):
+    return render(request, 'button.html', {})    
+    
+def form(request):
+    return render(request, 'form.html', {})    
+
+def xingzuo(request):
+    return render(request, 'xingzuo.html', {})    
+    
+    
     
