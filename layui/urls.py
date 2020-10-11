@@ -5,5 +5,6 @@ urlpatterns = [
         url(r'^$', views.hello_world, name='hello_world'),        
         url(r'^table/$', views.table, name='table'),        
         url(r'^json/$', views.json, name='json'),        
+        url(r'^json2/$', views.json2, name='json2'),        
         ]
 

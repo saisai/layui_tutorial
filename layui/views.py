@@ -18,13 +18,29 @@ def jsons(request):
     #return render(request, 'json/demo1.json', {})   
 
 def json(request):
-    print(BASE_DIR)
+    from os.path import dirname
+    t = os.path.abspath(os.path.dirname(__file__))
+    tt = dirname(t)
     f = os.path.abspath(os.path.dirname(__file__))
     print(f)
     #file_path = BASE_DIR + '/json
-    f = open(f + '/json/table/demo1.json', 'r', encoding="utf8")
+    f = open(tt + '/json/table/demo1.json', 'r', encoding="utf8")
     file_content = f.read()
     f.close()
     return HttpResponse(file_content, content_type="application/json")    
     #return HttpResponse(file_content, content_type="text/plain")    
+    
+def json2(request):
+    #print(BASE_DIR)
+    f = os.path.abspath(os.path.dirname(__file__))
+    #print(f)
+    #file_path = BASE_DIR + '/json
+    from os.path import dirname
+    t = os.path.abspath(os.path.dirname(__file__))
+    tt = dirname(t)    
+    f = open(tt + '/json/table/demo2.json', 'r', encoding="utf8")
+    file_content = f.read()
+    f.close()
+    return HttpResponse(file_content, content_type="application/json")    
+    #return HttpResponse(file_content, content_type="text/plain")        
     
