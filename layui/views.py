@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
+from django.views.decorators.csrf import csrf_protect
+
 # Create your views here.
 from pathlib import Path
 import os
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -56,5 +59,21 @@ def form(request):
 def xingzuo(request):
     return render(request, 'xingzuo.html', {})    
     
+def form2(request):
+    return render(request, 'form2.html', {})     
+
+#@csrf_protect   
+def posttest(request):
+    import json
+    if request.method == 'POST':
+        #print('post')
+        print(request.POST)
+        print(request.POST.get("title", ""))
+        #print(request.body)
+        data = json.loads(request.body)
+        print(data)
+        print(data['title'])
+    return render(request, 'form2.html', {}) 
+   
     
     

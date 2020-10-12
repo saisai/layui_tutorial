@@ -11,5 +11,7 @@ urlpatterns = [
         url(r'^button/$', views.button, name='button'),        
         url(r'^form/$', views.form, name='form'),        
         url(r'^xingzuo/$', views.xingzuo, name='xingzuo'),        
+        url(r'^form2/$', views.form2, name='form2'),        
+        url(r'^posttest/$', views.posttest, name='posttest'),        
         ]
 
